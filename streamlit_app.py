@@ -23,6 +23,6 @@ def main():
     # Display DataFrame using AgGrid
     st.write('Displaying Data using AgGrid:')
     AgGrid(house)  # Use AgGrid to display the DataFrame
-
+    st.table([x for x in range(1,5)])
 if __name__ == '__main__':
     main()
