@@ -10,7 +10,7 @@ def main():
     st.markdown('# Rendering Markdown')
     st.write('Some Pythagorean Equation:')
     st.latex('c^2 = a^2 + b^2')
-    st.dataframe(house)
+    st.dataframe(house) #menampilkan dataframe
 
 if __name__ == '__main__':
     main()
