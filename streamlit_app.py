@@ -103,7 +103,7 @@ min_value, max_value = st.sidebar.slider(
 )
 
 # Filter data based on sidebar inputs
-filtered_data = data[
+filtered_data = house[
     (house['condition'].isin(Condition)) & 
     (house['price'] >= min_value) & 
     (house['price'] <= max_value)
