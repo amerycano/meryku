@@ -98,8 +98,8 @@ Condition = st.sidebar.multiselect(
 min_value, max_value = st.sidebar.slider(
     "Select Value Range",
     min_value=0.0,
-    max_value=10000000.0,
-    value=(0.0, 10000000.0)
+    max_value=1000000.0,
+    value=(0.0, 1000000.0)
 )
 
 # Filter data based on sidebar inputs
