@@ -80,8 +80,37 @@ def main ():
   tab1.write("this is tab 1")
   tab2.write("this is tab 2")
 
-  # You can also use "with" notation:
+  # You can also use "with" notation untuk mengisi  tab:
   with tab1:
-     st.radio("Select one:", [1, 2])
+     st.radio("Select one:", [1, 2]) 
+    
+# Sidebar for filters
+st.sidebar.header("Filter Options")
+
+# Category filter
+Condition = st.sidebar.multiselect(
+    "Select Condition",
+    options=house['condition'].unique(),
+    default=house['condition'].unique()
+)
+
+# Value range filter
+min_value, max_value = st.sidebar.slider(
+    "Select Value Range",
+    min_value=0.0,
+    max_value=10000000.0,
+    value=(0.0, 10000000.0)
+)
+
+# Filter data based on sidebar inputs
+filtered_data = data[
+    (house['condition'].isin(Condition)) & 
+    (house['price'] >= min_value) & 
+    (house['price'] <= max_value)
+]
+
+# Main bar content
+st.header("Filtered Data")
+st.write(filtered_data)
 if __name__ == '__main__':
     main()
