@@ -46,7 +46,7 @@ def main ():
 
   with col1:
     st.header("A cat")
-    st.image("https://static.streamlit.io/examples/cat.jpg")
+    # st.image("https://static.streamlit.io/examples/cat.jpg")
   #atau dengan assignment 
   image_col1 = col1.image("https://static.streamlit.io/examples/cat.jpg")
 
