@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 pip install --upgrade pip
 house = pd.read_csv('house_clean.csv')
+pip search st-aggrid
 
 def main() : 
   st.header('This is Header')
