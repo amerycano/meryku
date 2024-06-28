@@ -13,6 +13,8 @@ def main():
     st.dataframe(house) #menampilkan dataframe
     st.write('Metrics')
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
+    st.write('Menampilkan Data House pada AgGrid')
+    AgGrid(house)
 if __name__ == '__main__':
     main()
 
