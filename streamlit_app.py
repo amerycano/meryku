@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+pip install --upgrade pip
 house = pd.read_csv('house_clean.csv')
 
 def main() : 
