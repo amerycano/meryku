@@ -1,5 +1,4 @@
-%%writefile  webapp.py 
-import streamlit as st 
+import sreamlit as st 
 
 def main() : 
   st.write('Minimal Example')
