@@ -10,8 +10,7 @@ def main():
     st.write('Some Pythagorean Equation:')
     st.latex('c^2 = a^2 + b^2')
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
-    st.write('Displaying Data using AgGrid:')
-    AgGrid(house)  # Use AgGrid to display the DataFrame
+
 
 if __name__ == '__main__':
     main()
