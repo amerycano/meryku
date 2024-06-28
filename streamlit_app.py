@@ -19,5 +19,5 @@ def main ():
   st.write('Menampilkan Dataframe dengan St AgGrid')
   AgGrid(house)
   st.table([x for x in range(1,5)])
-if __name__ == '__main__' :
-  main()
+if __name__ == '__main__':
+    main()
